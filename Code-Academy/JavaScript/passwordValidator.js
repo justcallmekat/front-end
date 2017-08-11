@@ -3,6 +3,7 @@ var isUppercase = false;
 var isLowercase = false;
 var isLongEnough = false;
 var isSpecialCharacter = false;
+var isNumber = false;
 var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 //verifies Uppercase
 function hasUppercase(input) {
@@ -41,12 +42,25 @@ function hasSpecialCharacter(input) {
 		}
 	}
 } //END hasSpecialCharacter
+//verifies number
+function hasNumber(input) {
+	var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+	for (var i = 0; i < input.length; i++) {
+		for (var j = 0; j < numbers.length; j++) {
+			if (input[i] === numbers[j]) {
+				isNumber = true;
+			}
+		}
+	}//outer loop
+};//END hasNumber
+//validates input
 function isPasswordValid(input) {
 	hasUppercase(input);
 	hasCharacterLength(input);
 	hasLowercase(input);
 	hasSpecialCharacter(input);
-	if (isUppercase && isLongEnough && isLowercase && isSpecialCharacter) {
+	hasNumber(input);
+	if (isUppercase && isLongEnough && isLowercase && isSpecialCharacter && isNumber) {
 		console.log('Your password is valid');
 	} else if (!isUppercase) {
 		console.log('Valid passwords require: 1 Uppercase letter');
@@ -56,6 +70,8 @@ function isPasswordValid(input) {
 		console.log('Valid passwords require: 1 Lowercase letter');
 	} else if (!isSpecialCharacter) {
 		console.log('Valid passwords require: At least 1 special character, i.e.\"!@#$%&*^\"');
+	} else if (!isNumber) {
+		console.log('Valid passwords require: At least 1 number, i.e.\"0123456789\"');
 	}
 }; //END password valid
-isPasswordValid('candYgir7@');
+isPasswordValid('Kittens1!');
