@@ -4,6 +4,7 @@ var isLowercase = false;
 var isLongEnough = false;
 var isSpecialCharacter = false;
 //verifies Uppercase
+
 function hasUppercase(input) {
   for (var i = 0; i < input.length; i++) {
     if (input[i] === input[i].toUpperCase()) {
