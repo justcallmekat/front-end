@@ -1,0 +1,92 @@
+* {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #056C75;
+}
+
+main { /*by doing a width in percentage then setting min and max width I can account for responsiveness*/
+  width: 75%;
+  min-width: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+}
+
+h1{
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+header{
+  overflow: auto;
+}
+
+header p{
+  width: 50%;
+  float: left;
+}
+
+.questions{
+  text-align: left;
+}
+
+.score{
+  text-align: right;
+}
+
+header p span{
+  font-size: 30px;
+  display: block;
+}
+
+h2{
+  margin: 50px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #54E8F7;
+}
+
+li{
+background-color: #023136;
+padding: 10px;
+margin: 15px auto;
+border-radius: 25px;
+width: 75%;
+cursor: pointer;
+}
+
+li:hover,li.selected{
+  background-color: #F67748;
+}
+
+a{
+  width: 50%;
+  background-color: #ccc;
+  padding: 10px 25px;
+  font-size: 25px;
+  margin: 25px;
+  display: inline-block;
+}
+
+section a{
+  border-radius: 8px;
+}
+
+a.ready{
+  background-color: green;
+}
+
+a.restart{
+  background-color: #F67748;
+  border-radius: 8px;
+}
