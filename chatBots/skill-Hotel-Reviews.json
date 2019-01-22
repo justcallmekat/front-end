@@ -1,0 +1,854 @@
+{
+  "name": "Hotel Reviews",
+  "intents": [
+    {
+      "intent": "about",
+      "examples": [
+        {
+          "text": "best amenities"
+        },
+        {
+          "text": "amenities"
+        },
+        {
+          "text": "is there a business center"
+        },
+        {
+          "text": "can i hold events there"
+        },
+        {
+          "text": "does it have a gym"
+        },
+        {
+          "text": "does it have a pool"
+        },
+        {
+          "text": "where is the hotel located"
+        },
+        {
+          "text": "hotel amenities"
+        },
+        {
+          "text": "tell me about"
+        },
+        {
+          "text": "about"
+        },
+        {
+          "text": "I want to know about"
+        },
+        {
+          "text": "tell me"
+        },
+        {
+          "text": "I want to know"
+        },
+        {
+          "text": "what are they like"
+        },
+        {
+          "text": "what can you do"
+        },
+        {
+          "text": "what can you tell me"
+        },
+        {
+          "text": "handicap accessibility"
+        }
+      ],
+      "description": "his intent identifies whether a person wants to know more about a hotel or a city."
+    },
+    {
+      "intent": "best",
+      "examples": [
+        {
+          "text": "best in new york"
+        },
+        {
+          "text": "I'd like the best hotel"
+        },
+        {
+          "text": "I want a five star hotel"
+        },
+        {
+          "text": "what's special about the hotel"
+        },
+        {
+          "text": "Give me the best hotel you have"
+        },
+        {
+          "text": "what's recommended on the hotel list"
+        },
+        {
+          "text": "top rated holtels"
+        },
+        {
+          "text": "most affortable hotels"
+        },
+        {
+          "text": "hotels to stay away from"
+        },
+        {
+          "text": "top"
+        },
+        {
+          "text": "best reviews"
+        },
+        {
+          "text": "highest rating"
+        },
+        {
+          "text": "highest rated"
+        },
+        {
+          "text": "best hotel"
+        },
+        {
+          "text": "top rated"
+        },
+        {
+          "text": "best"
+        },
+        {
+          "text": "what is the best hotel"
+        },
+        {
+          "text": "what's specail about the hotel"
+        },
+        {
+          "text": "lowest rating"
+        },
+        {
+          "text": "best deal"
+        },
+        {
+          "text": "good deal"
+        }
+      ],
+      "description": "This intent recognizes when a person is asking about what the best hotel is."
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "greetings"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "sup"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        }
+      ],
+      "description": "This intent greets a user."
+    },
+    {
+      "intent": "hotels",
+      "examples": [
+        {
+          "text": "all hotels"
+        },
+        {
+          "text": "whatcha' got"
+        },
+        {
+          "text": "what do you have listed"
+        },
+        {
+          "text": "show me what you have"
+        },
+        {
+          "text": "what's available"
+        },
+        {
+          "text": "i want to see it all"
+        },
+        {
+          "text": "iw ant to see everything"
+        },
+        {
+          "text": "i want to see everything"
+        },
+        {
+          "text": "show me your hotels"
+        },
+        {
+          "text": "what hotel information do you have"
+        },
+        {
+          "text": "give me all the hotel information you have please"
+        },
+        {
+          "text": "what hotel information do yo have"
+        },
+        {
+          "text": "i need hotel information"
+        },
+        {
+          "text": "What hotels do you have information on"
+        },
+        {
+          "text": "show it all"
+        },
+        {
+          "text": "show me everything"
+        },
+        {
+          "text": "show me evrything"
+        },
+        {
+          "text": "what hotels"
+        },
+        {
+          "text": "what hotels are in"
+        },
+        {
+          "text": "hotels"
+        },
+        {
+          "text": "list the hotels"
+        },
+        {
+          "text": "list hotels"
+        },
+        {
+          "text": "what hotels do"
+        },
+        {
+          "text": "what hotels do you have reviews for"
+        },
+        {
+          "text": "what hotels can you tell me about"
+        },
+        {
+          "text": "what hotels do you have"
+        },
+        {
+          "text": "i need to see a list of hotels"
+        },
+        {
+          "text": "hotlse in the list"
+        },
+        {
+          "text": "hote in the list"
+        },
+        {
+          "text": "Could you tell me what hotels are listed"
+        }
+      ],
+      "description": "This intent recognizes when a person is asking about what hotels are in the data set."
+    },
+    {
+      "intent": "bye",
+      "examples": [
+        {
+          "text": "bye"
+        },
+        {
+          "text": "goodbye"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "later"
+        },
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "so long"
+        },
+        {
+          "text": "adios"
+        },
+        {
+          "text": "hasta la vista"
+        }
+      ],
+      "description": "This intent closes out communication with a user."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "hotel",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "60_thompson",
+          "synonyms": [
+            "Thompson",
+            "60 Thompson"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "70_park_avenue_hotel_a_kimpton_hotel",
+          "synonyms": [
+            "Park Avenue hotel",
+            "70 Park Avenue hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "alexis_park_san_francisco",
+          "synonyms": [
+            "Alexis Park"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "abbott_hotel",
+          "synonyms": [
+            "Abbott hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3_west_club",
+          "synonyms": [
+            "3 west club",
+            "west club"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "adante_hotel",
+          "synonyms": [
+            "Adante Hotel",
+            "adante"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "allerton_hotel",
+          "synonyms": [
+            "Allerton Hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "america_s_best_inn_san_francisco",
+          "synonyms": [
+            "America's Best Inn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "alpha_inn_and_suites_san_francisco",
+          "synonyms": [
+            "Alpha Inn and Suites",
+            "Alpha Inn and Suites San Francisco"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "aida_hotel",
+          "synonyms": [
+            "Aida hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "6_columbus",
+          "synonyms": [
+            "Columbux",
+            "6 Columbus"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "argonaut_hotel_a_kimpton_hotel",
+          "synonyms": [
+            "Argonaut Hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "abigail_hotel",
+          "synonyms": [
+            "Abigail hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "andrews_hotel",
+          "synonyms": [
+            "Andrews hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "alexander_inn",
+          "synonyms": [
+            "Alexander Inn"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "414_hotel",
+          "synonyms": [
+            "414 hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "amalfi_hotel_chicago",
+          "synonyms": [
+            "Amalfi Hotel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "americas_best_value_inn_golden_gate",
+          "synonyms": [
+            "America's best value inn golden gate"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "city",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chicago",
+          "synonyms": [
+            "Chi-twon",
+            "Chi-town",
+            "Chitown",
+            "the windy city",
+            "chi town",
+            "naperville",
+            "The Second City",
+            "the white city",
+            "Chicagoland",
+            "City by the Lake",
+            "City of the Big Shoulders",
+            "City of Broad Shoulders",
+            "City of the Century",
+            "The 312",
+            "City on the Make",
+            "The City That Works",
+            "The Big Onion",
+            "City in a Garden",
+            "Hog-Butcher to the World",
+            "Beirut by the Lake",
+            "New York Done Right",
+            "Illville",
+            "I Will City",
+            "Paris on the Prairie",
+            "Sweet Home",
+            "Heart of America",
+            "The 773",
+            "The Alley Capital of America",
+            "Chi-City",
+            "Mud city",
+            "The Toddling Town",
+            "the great american city"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "New York",
+          "synonyms": [
+            "NYC",
+            "new yourk city",
+            "the big apple",
+            "midtown",
+            "the bricks",
+            "the boogie down bronx",
+            "upper east side",
+            "central park",
+            "The Empire State",
+            "City that Never Sleeps",
+            "Center of the Universe",
+            "The Capital of the World",
+            "The City of Dreams",
+            "The City So Nice, They Named It Twice",
+            "New york, new york",
+            "Fun City",
+            "Gotham",
+            "new york city",
+            "Hymie Town"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "San Francisco",
+          "synonyms": [
+            "San Fran",
+            "SF",
+            "frisco",
+            "The Golden City",
+            "The City by the Bay",
+            "Golden Gate City",
+            "Fog City",
+            "The City that Knows How",
+            "Baghdad by the Bay",
+            "The Paris of the West",
+            "The City",
+            "the bay area"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "Workspace for the hotel review chat bot.",
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The best hotel in San Francisco is"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1538775198687",
+      "context": {
+        "best": "san-francisco"
+      },
+      "metadata": {},
+      "conditions": "@city:(San Francisco)",
+      "dialog_node": "node_11_1538775715276",
+      "previous_sibling": "node_9_1538775256066"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The best hotel in Chicago is"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1538775198687",
+      "context": {
+        "best": "chicago"
+      },
+      "metadata": {},
+      "conditions": "@city:Chicago",
+      "dialog_node": "node_10_1538775573214",
+      "previous_sibling": "node_11_1538775715276"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The best hotel overall is"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1538775198687",
+      "context": {
+        "best": "All"
+      },
+      "metadata": {},
+      "dialog_node": "node_13_1538775992884",
+      "previous_sibling": "node_10_1538775573214"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "The best hotel in New York is"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1538775198687",
+      "context": {
+        "best": "new-york-city"
+      },
+      "metadata": {},
+      "conditions": "@city:(New York)",
+      "dialog_node": "node_9_1538775256066"
+    },
+    {
+      "type": "standard",
+      "title": "Responses: New York Hotel questions",
+      "output": {
+        "text": {
+          "values": [
+            "The hotels in New York that we have data on include:"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1538767816569",
+      "context": {
+        "list": "new-york-city"
+      },
+      "metadata": {},
+      "conditions": "@city:(New York)",
+      "dialog_node": "node_3_1538769639265",
+      "previous_sibling": "node_2_1538768247287"
+    },
+    {
+      "type": "standard",
+      "title": "Responses: San Francisco Hotel questions",
+      "output": {
+        "text": {
+          "values": [
+            "The hotels in San Francisco that we have data on include:"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1538767816569",
+      "context": {
+        "list": "san-francisco"
+      },
+      "metadata": {},
+      "conditions": "@city:(San Francisco)",
+      "dialog_node": "node_4_1538769768608",
+      "previous_sibling": "node_3_1538769639265"
+    },
+    {
+      "type": "standard",
+      "title": "Responses: Chicago Hotel questions",
+      "output": {
+        "text": {
+          "values": [
+            "The hotels in Chicago that we have data on include:"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1538767816569",
+      "context": {
+        "list": "chicago"
+      },
+      "metadata": {},
+      "conditions": "@city:Chicago",
+      "dialog_node": "node_2_1538768247287"
+    },
+    {
+      "type": "standard",
+      "title": "Questions: About Hotels",
+      "output": {
+        "text": {
+          "values": [
+            "I can tell you things like average sentiment, number of positive and negative reviews, the emotions expressed in reviews, and the personality and consumption preference of the average hotel guests."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#about",
+      "dialog_node": "node_14_1538776455578",
+      "previous_sibling": "node_8_1538775198687"
+    },
+    {
+      "type": "standard",
+      "title": "Questions: Hotel",
+      "output": {
+        "text": {
+          "values": [
+            "We have data on many different hotels in New York City, Chicago, and San Francisco. What city would you like to view hotels for?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "#hotels",
+      "dialog_node": "node_1_1538767816569",
+      "previous_sibling": "node_7_1538774313407"
+    },
+    {
+      "type": "standard",
+      "title": "Questions: Best Hotel",
+      "output": {},
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#best",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1538775198687",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_15_1538776539188"
+    },
+    {
+      "type": "standard",
+      "title": "Questions: City is SF",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1538769768608"
+      },
+      "conditions": "@city:(San Francisco)",
+      "dialog_node": "node_6_1538774147540",
+      "previous_sibling": "node_5_1538773851410"
+    },
+    {
+      "type": "standard",
+      "title": "Questions: City is Chicago",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1538768247287"
+      },
+      "conditions": "@city:Chicago",
+      "dialog_node": "node_7_1538774313407",
+      "previous_sibling": "node_6_1538774147540"
+    },
+    {
+      "type": "standard",
+      "title": "Questions: City is New York",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1538769639265"
+      },
+      "conditions": "@city:(New York)",
+      "dialog_node": "node_5_1538773851410",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Hello!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "#greeting",
+      "dialog_node": "node_2_1500478124985",
+      "previous_sibling": "node_1_1538767816569"
+    },
+    {
+      "type": "standard",
+      "title": "Look-up: Hotel Entity",
+      "output": {
+        "text": {
+          "values": [
+            "Our analysis of"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "context": {
+        "hotel": "<? entities.hotel ?>"
+      },
+      "metadata": {},
+      "conditions": "@hotel",
+      "dialog_node": "node_15_1538776539188",
+      "previous_sibling": "node_2_1500478124985"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "Goodbye!",
+            "Ciao!",
+            "Bye!",
+            "See you later, alligator!",
+            "After a while, crocodile!",
+            "Later!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "#bye",
+      "dialog_node": "node_1_1504734174283",
+      "previous_sibling": "node_14_1538776455578"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "text": {
+          "values": [
+            "I didn't understand. You can try rephrasing.",
+            "Can you reword your statement? I'm not understanding.",
+            "I didn't get your meaning."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1504734174283"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "text": {
+          "values": [
+            "Hello and welcome to the hotel reviews bot. How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "c9f2496b-b20e-4055-8020-d7e6e2e8cbef",
+  "counterexamples": [
+    {
+      "text": "do you sell flowers"
+    },
+    {
+      "text": "new york"
+    }
+  ],
+  "learning_opt_out": false,
+  "status": "Available"
+}
